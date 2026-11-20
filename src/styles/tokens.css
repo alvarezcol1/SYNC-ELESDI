@@ -1,0 +1,94 @@
+/*
+ * Design tokens — EFFECTIVE "Intelligent Protection in Motion".
+ *
+ * The official logo was not available while building, so this palette follows
+ * the brief's direction (deep navy, ivory, controlled blue, restrained red,
+ * metallic silver, amber details). When the logo arrives, sample its exact
+ * navy / blue / red and update the `--brand-*` values below; every component
+ * derives from these.
+ */
+:root {
+  /* Brand primitives */
+  --brand-navy: #0b1730;
+  --brand-blue: #3f7fff;
+  --brand-red: #d2363c;
+  --brand-ivory: #f4f0e6;
+  --brand-silver: #b4bdca;
+  --brand-amber: #f0b44c;
+
+  /* Navy scale (backgrounds) */
+  --navy-990: #030712;
+  --navy-950: #050c1b;
+  --navy-900: #081227;
+  --navy-850: #0b1730;
+  --navy-800: #0f1e3d;
+  --navy-700: #172a52;
+  --navy-600: #22396b;
+
+  /* Text on dark — WCAG contrast measured against --navy-900 */
+  --ink-hi: #f4f0e6; /* 16.4:1 */
+  --ink-md: #c3c9d4; /* 11.2:1 */
+  --ink-lo: #8e98aa; /* 6.4:1 (5.7:1 on --navy-800) */
+
+  /* Text on ivory */
+  --ink-dark-hi: #081227; /* 16.4:1 on ivory */
+  --ink-dark-md: #36425a; /* 8.9:1 */
+  --ink-dark-lo: #56617a; /* 5.5:1 */
+
+  /* Accents */
+  --blue-300: #8fb4ff;
+  --blue-400: #6a9cff; /* text-safe on navy: 6.9:1 */
+  --blue-500: #3f7fff;
+  --blue-600: #2a62d8; /* text-safe on ivory: 4.8:1 */
+  --red-400: #ef5a5f;
+  --red-500: #d2363c;
+  --red-600: #b42a30; /* text-safe on ivory: 5.6:1 */
+  --whatsapp: #187a4c; /* white text 5.4:1 */
+  --amber-400: #f5c46b;
+  --amber-500: #f0b44c;
+  --silver-300: #d6dce5;
+  --silver-500: #b4bdca;
+
+  /* Surfaces */
+  --surface-glass: rgb(15 30 61 / 0.55);
+  --surface-glass-strong: rgb(11 23 48 / 0.82);
+  --line-soft: rgb(180 189 202 / 0.12);
+  --line: rgb(180 189 202 / 0.2);
+  --line-strong: rgb(180 189 202 / 0.34);
+
+  /* Typography */
+  --font-display: 'Archivo Variable', 'Archivo', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.86rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.08rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
+  --step-2: clamp(1.4rem, 1.25rem + 0.7vw, 1.85rem);
+  --step-3: clamp(1.8rem, 1.5rem + 1.4vw, 2.75rem);
+  --step-4: clamp(2.2rem, 1.7rem + 2.5vw, 4rem);
+  --step-5: clamp(2.5rem, 1.6rem + 4.4vw, 5.6rem);
+
+  /* Space & layout */
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --section-y: clamp(5rem, 3.5rem + 7vw, 10rem);
+  --max-w: 1320px;
+  --radius-s: 10px;
+  --radius-m: 18px;
+  --radius-l: 28px;
+
+  /* Depth */
+  --shadow-1: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 10px 30px -12px rgb(0 0 0 / 0.6);
+  --shadow-2: 0 1px 0 rgb(255 255 255 / 0.06) inset, 0 30px 60px -20px rgb(0 0 0 / 0.7),
+    0 12px 24px -12px rgb(0 0 0 / 0.5);
+  --shadow-glow-blue: 0 0 0 1px rgb(63 127 255 / 0.35), 0 16px 40px -12px rgb(63 127 255 / 0.45);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 160ms;
+  --dur-2: 320ms;
+  --dur-3: 700ms;
+  --dur-4: 1100ms;
+
+  --nav-h: 76px;
+  color-scheme: dark;
+}
